@@ -1,5 +1,4 @@
-﻿
-function render() {
+﻿function render() {
     var html = document.getElementById("box-html").children[0];
     var css = document.getElementById("box-css").children[0];
     var js = document.getElementById("box-js").children[0];
@@ -16,6 +15,4 @@ document.addEventListener('keyup', function () {
     render();
 });
 
-render();
-
-document.getElementById("context").addEventListener('load', render);
+document.addEventListener('DOMContentLoaded', render, false);
